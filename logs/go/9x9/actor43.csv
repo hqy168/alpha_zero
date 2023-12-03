@@ -9990,3 +9990,6 @@ datetime,game_length,game_result,num_passes,is_resign_disabled,is_marked_for_res
 2023-05-26 09:43:36,33,W+R,0,False,False,False,B,-0.85,10.5668,220000
 2023-05-26 09:43:47,33,W+R,0,False,False,False,B,-0.85,10.5686,220000
 2023-05-26 09:43:56,33,W+R,0,False,False,False,B,-0.85,10.5633,220000
+2023-12-02 16:43:24,126,W+42.5,9,False,False,False,,-0.88,118.6013,0
+2023-12-02 16:54:37,126,W+42.5,9,False,False,False,,-0.88,116.8794,0
+2023-12-02 17:24:39,162,B+R,3,False,False,False,W,-0.88,61.6452,0

@@ -9772,3 +9772,5 @@ datetime,game_length,game_result,num_passes,is_resign_disabled,is_marked_for_res
 2023-05-26 09:43:16,33,W+R,0,False,False,False,B,-0.85,12.0925,220000
 2023-05-26 09:43:39,87,W+6.5,9,True,True,False,B,-0.85,12.2227,220000
 2023-05-26 09:43:48,33,W+R,0,False,False,False,B,-0.85,12.2192,220000
+2023-12-02 16:43:12,82,W+5.5,4,False,False,False,,-0.88,111.1415,0
+2023-12-02 16:54:26,82,W+5.5,4,False,False,False,,-0.88,110.0001,0

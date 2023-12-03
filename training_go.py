@@ -203,6 +203,22 @@ def main():
             learner_device = eval_device = torch.device('cuda')
 
         actor_devices = [torch.device(f'cuda:{i % num_gpus}') for i in range(FLAGS.num_actors)]
+    
+    else: 
+        # Check that MPS is available
+        if not torch.backends.mps.is_available():
+            if not torch.backends.mps.is_built():
+                print("MPS not available because the current PyTorch install was not "
+                    "built with MPS enabled.")
+            else:
+                print("MPS not available because the current MacOS version is not 12.3+ "
+                    "and/or you do not have an MPS-enabled device on this machine.")
+
+        else:
+            learner_device = eval_device = torch.device('mps')
+
+            num_mps = 1
+            actor_devices = [torch.device(f'mps:{i % num_mps}') for i in range(FLAGS.num_actors)]    
 
     def env_builder():
         return GoEnv(komi=FLAGS.komi, num_stack=FLAGS.num_stack)
