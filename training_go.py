@@ -216,9 +216,9 @@ def main():
 
         else:
             learner_device = eval_device = torch.device('mps')
-
-            num_mps = 1
-            actor_devices = [torch.device(f'mps:{i % num_mps}') for i in range(FLAGS.num_actors)]    
+            actor_devices = [torch.device('mps')] * FLAGS.num_actors
+            # num_mps = 1
+            # actor_devices = [torch.device('mps') for i in range(FLAGS.num_actors)]    
 
     def env_builder():
         return GoEnv(komi=FLAGS.komi, num_stack=FLAGS.num_stack)

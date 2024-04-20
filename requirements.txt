@@ -2,9 +2,9 @@ absl_py==1.3.0
 gym==0.25.2
 numpy==1.26.2
 sgf==0.5
-torch==2.2.0.dev20231202
-torchvision==0.17.0.dev20231202
-python-snappy==0.6.1
+torch==2.2.2
+torchvision==0.17.2
+python-snappy==0.7.1
 Pillow==10.1.0
-matplotlib==3.6.2
+matplotlib==3.8.4
 pandas==1.5.3
